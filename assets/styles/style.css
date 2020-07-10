@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+/*atur ukuran font jadi 18px pada teks yang berada di elemen <a> yang merupakan turunan <nav>*/
+nav a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+}
+
+/*efek tebal teks ketika salah satu item navigasi diarahkan menggunakan kursor*/
+nav a:hover{
+	font-weight: bold;
+}
+
+/*menjadikan profile di posisi tengah atau center*/
+.profile header {
+	text-align: center;
+}
+
+body {
+	font-family: 'Quicksand',sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+/*agar navigasi dapat menempel pada seluruh halaman? Buat elemen <header> sebagai induk dari elemen <nav> yang menerapkan properti display dengan nilai inline.*/
+header {
+	display: inline;
+}
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px */
+@media screen and (max-width: 1000px){
+	#content,
+	aside {
+		width: 100%;
+		padding: 0;
+	}
+} 
+
+h2, h3 {
+	color: #00a2c6
+}
+
+/* class ini untuk melebarkan gambar*/
+.featured-image {
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+   object-position: center;
+}
+ /*mengecilkan ukuran gambar*/
+.profile img {
+	width: 200px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#content {
+	float: left;
+	width: 75%;
+}
+ 
+aside {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.jumbotron {
+	font-size: 20px;
+	padding: 60px;
+	background-color: #00c8eb;
+	text-align: center;
+	color: white;
+}
+
+
+nav li {
+	display: inline;  /*display akan membuat elemen <li> jadi sifat inline*/
+	list-style-type: none; /*akan menghilangkan tanda titik di tiap list*/
+	margin-right: 20px; 
+}
+
+/*background navbar list*/
+nav {
+	background-color: #00a2c6;
+	padding: 5px;
+	position: sticky; /*Nilai top diperlukan agar ketika pengguna melakukan scrolling, elemen navigasi tetap berada di atas jendela browser*/
+	top: 0;
+}
+
+/*navbar bawah*/
+footer	{
+	text-align: center;
+	font-weight: bold;
+	padding: 20px;
+	color: white;
+	background-color: #00a2c6
+}
